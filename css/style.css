@@ -1,0 +1,60 @@
+.hidden {
+  display: none;
+}
+
+.correct,
+.all-done,
+.correct-login {
+  color: green;
+}
+
+.invalid,
+.invalid-login,
+.must-login {
+  color: red;
+}
+
+.bad {
+  width: 30.33%;
+  background-color: red !important;
+}
+.medium {
+  width: 60.66%;
+  background-color: orange !important;
+}
+.good {
+  width: 100%;
+  background-color: green !important;
+}
+
+.medium-text {
+  color: orangered;
+}
+
+.progress {
+  height: 0.6rem;
+}
+
+.progress-zero {
+  width: 0;
+  background-color: red !important;
+}
+
+.my-eye-icon {
+  color: #8e8e8e;
+}
+
+.contain-special-for-pa {
+  transform: translate(0, -50%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.my-home-headding {
+  justify-self: center;
+}
+.containAll {
+  background-color: #8e8e8e;
+}

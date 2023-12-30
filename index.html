@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link href="./images/icon.jpg" rel="icon" /> -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <title>login page</title>
+  </head>
+  <body>
+    <section
+      class="container mt-5 text-center w-50 bg-info rounded-3 py-5 my-singup-section hidden"
+    >
+      <h1 class="mb-5"><i class="fas fa-store"></i> Smart Purchase APIs</h1>
+      <input
+        type="text"
+        class="form-control mb-3 name-in"
+        placeholder="Enter your name"
+      />
+      <p class="must hidden invalid">You must enter your Name</p>
+      <p class="done hidden correct">You Enter your name</p>
+      <input
+        type="email"
+        class="form-control mb-3 email-in"
+        placeholder="Enter your email"
+      />
+      <p class="must hidden invalid">You must enter your email</p>
+      <p class="done hidden correct">You Enter your email correctly</p>
+      <p class="wrong hidden invalid">Invalid email.</p>
+      <p class="invalid hidden example">
+        Enter a valid Email Ex: someone@gmail.com
+      </p>
+      <div class="contain-my-input position-relative">
+        <div
+          class="position-absolute end-0 top-50 contain-special-for-pa my-eye-icon-visib1 overflow-hidden hidden"
+        >
+          <i class="fas fa-eye my-eye-icon"></i>
+        </div>
+
+        <div
+          class="position-absolute end-0 top-50 contain-special-for-pa overflow-hidden my-eye-icon-invisib1"
+        >
+          <i class="fas fa-eye-slash my-eye-icon"></i>
+        </div>
+
+        <input
+          type="password"
+          class="form-control mb-3 pass-in signupPass"
+          placeholder="Enter your password"
+        />
+      </div>
+      <p class="must hidden invalid">You must enter your Pass</p>
+      <p class="done hidden correct">You Enter your Pass correctly</p>
+      <p class="wrong hidden invalid">
+        Your Password must be at least 8 charachters
+      </p>
+      <div
+        class="contain-pass-valid d-flex justify-content-center align-items-center flex-column"
+      >
+        <div
+          class="progress w-50 mb-2 hidden"
+          role="progressbar"
+          aria-label="Basic example"
+          aria-valuenow="0"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          <div class="progress-bar"></div>
+        </div>
+        <p class="correct correct-validate hidden good-password">
+          Good Password
+        </p>
+        <p class="all-done hidden">Done</p>
+        <p class="invalid bad-validate hidden">Bad Password</p>
+        <p class="medium-text medium-validate hidden">Medium Password</p>
+        <ul class="list-unstyled text-start my-list hidden">
+          <li>
+            <i class="fas fa-check hidden my-check"></i> 8 charachters at Least
+          </li>
+          <li class="single-capital">
+            <i class="single-capital-icon fas fa-check hidden my-check"></i>
+            single capital letter at Least
+          </li>
+          <li class="single-small">
+            <i class="fas fa-check hidden my-check single-small-icon"></i>
+            single small letter at Least
+          </li>
+          <li class="digit-pa">
+            <i class="fas fa-check hidden my-check"></i> single digit at Least
+          </li>
+        </ul>
+      </div>
+      <button class="btn btn-danger mb-3 login-btn">Sign Up</button>
+      <p>
+        You already have an account? <a href="#" class="my-login-btn">login</a>
+      </p>
+    </section>
+    <section
+      class="container mt-5 text-center w-50 bg-info rounded-3 py-5 my-login-section"
+    >
+      <h1 class="mb-5"><i class="fas fa-store"></i> Smart Purchase APIs</h1>
+
+      <input
+        type="email"
+        class="form-control mb-3 my-login-email"
+        placeholder="Enter your email"
+        list="my-active-email"
+        oninput="showMyPass()"
+      />
+      <datalist id="my-active-email">
+        <!-- <option value="Education"></option> -->
+      </datalist>
+      <p class="invalid-login hidden">Enter a valid Email</p>
+      <p class="must-login hidden">You Must Enter an Email</p>
+      <p class="correct-login hidden">You Enter your Email correctly</p>
+      <div class="contain-my-input position-relative">
+        <div
+          class="position-absolute end-0 top-50 contain-special-for-pa my-eye-icon-visib2 overflow-hidden hidden"
+        >
+          <i class="fas fa-eye my-eye-icon"></i>
+        </div>
+
+        <div
+          class="position-absolute end-0 top-50 contain-special-for-pa overflow-hidden my-eye-icon-invisib2"
+        >
+          <i class="fas fa-eye-slash my-eye-icon"></i>
+        </div>
+
+        <input
+          type="password"
+          class="form-control mb-3 my-login-pass"
+          placeholder="Enter your Password"
+        />
+      </div>
+      <p class="invalid-login hidden">Enter a valid Password</p>
+      <p class="must-login hidden">You Must Enter your Password</p>
+      <p class="correct-login hidden">You Enter your Password correctly</p>
+      <button class="btn btn-danger mb-3 signup-btn">login</button>
+      <p>
+        Don't have an account? <a href="#" class="my-signup-btn">Sign up</a>
+      </p>
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
